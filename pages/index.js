@@ -25,7 +25,7 @@ export default function Home() {
           ></Image>
         </Box>
         <Heading as="h2" size="lg" mb={1}>
-          I'm Muhammad Hawwin Amri
+          I&aposm Muhammad Hawwin Amri
         </Heading>
         <Code>Currently learning Web Development and Cybersecurity</Code>
       </Flex>
