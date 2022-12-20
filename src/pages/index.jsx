@@ -3,7 +3,7 @@ import { Code, Heading, Container, Image, Box, Flex } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <Container maxW="500px">
+    <Container>
       <Head>
         <title>HWNAMR</title>
         <link rel="icon" href="/hwnamr.ico" />
@@ -14,17 +14,17 @@ export default function Home() {
         justifyContent="center"
         direction="column"
       >
-        <Heading as="h1" mb={3}>
+        <Heading as="h1" mb={6}>
           Hello There!
         </Heading>
-        <Box boxSize="200px" m={3}>
+        <Box boxSize="200px" mb={6}>
           <Image
             borderRadius="full"
             src="/profile-pic.jpg"
             alt="Hawwin Amri"
           ></Image>
         </Box>
-        <Heading as="h2" size="lg" mb={1}>
+        <Heading as="h2" size="lg" mb={6}>
           I&apos;m Muhammad Hawwin Amri
         </Heading>
         <Code>Currently learning Web Development and Cybersecurity</Code>
