@@ -12,10 +12,11 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
-    <Container bg="grey.500">
+    <Container>
       <Head>
         <title>HWNAMR</title>
         <link rel="icon" href="/hwnamr.ico" />
@@ -44,7 +45,7 @@ export default function Home() {
           Researcher, CTF Player, Infosec Practioner, Perpetual Learner.
         </Text>
         <Text>--- FOLLOW ME ---</Text>
-        <Flex mb={6}>
+        <Flex>
           <HStack>
             <Box>
               <Link href="https://twitter.com/hwnamr_" isExternal>
@@ -68,10 +69,8 @@ export default function Home() {
             </Box>
           </HStack>
         </Flex>
-        <Box>
-          <Text>Copyright 2022</Text>
-        </Box>
       </Flex>
+      <Footer />
     </Container>
   );
 }
