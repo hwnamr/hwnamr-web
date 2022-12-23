@@ -13,16 +13,17 @@ import {
 } from "@chakra-ui/react";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Footer from "../components/footer";
+import Navbar from "../components/navbar"
 
 export default function Home() {
   return (
     <Container>
+      <Navbar />
       <Head>
         <title>HWNAMR</title>
         <link rel="icon" href="/hwnamr.ico" />
       </Head>
       <Flex
-        height="100vh"
         p={10}
         alignItems="center"
         justifyContent="center"
@@ -46,7 +47,7 @@ export default function Home() {
         </Text>
         <Text>--- FOLLOW ME ---</Text>
         <Flex>
-          <HStack>
+          <HStack spacing='12px'>
             <Box>
               <Link href="https://twitter.com/hwnamr_" isExternal>
                 <Icon as={FaTwitter} boxSize={3} /> Twitter
