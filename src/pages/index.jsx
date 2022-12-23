@@ -10,45 +10,45 @@ import {
   Flex,
   HStack,
   Link,
+  VStack,
 } from "@chakra-ui/react";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Footer from "../components/footer";
-import Navbar from "../components/navbar"
+import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
-    <Container>
+    <Container maxW={'container.md'} justify={'center'}>
       <Navbar />
       <Head>
         <title>HWNAMR</title>
         <link rel="icon" href="/hwnamr.ico" />
       </Head>
       <Flex
+        justify={'center'}
         p={10}
-        alignItems="center"
-        justifyContent="center"
-        direction="column"
       >
-        <Heading as="h1" mb={6}>
+        <VStack spacing={6}>
+        <Heading as="h1">
           Hey There!
         </Heading>
-        <Box boxSize="200px" mb={6}>
+        <Box boxSize="200px">
           <Image
             borderRadius="full"
             src="/profile-pic.jpg"
             alt="Hawwin Amri"
           ></Image>
         </Box>
-        <Heading as="h2" size="lg">
+        <Heading as="h2" size="lg" align={'center'}>
           I&apos;m Muhammad Hawwin Amri
         </Heading>
-        <Text mb={6} align="center">
+        <Text align="center">
           Researcher, CTF Player, Infosec Practioner, Perpetual Learner.
         </Text>
         <Text>--- FOLLOW ME ---</Text>
         <Flex>
-          <HStack spacing='12px'>
-            <Box>
+          <HStack>
+            <Box justifyContent={'space-between'}>
               <Link href="https://twitter.com/hwnamr_" isExternal>
                 <Icon as={FaTwitter} boxSize={3} /> Twitter
               </Link>
@@ -70,6 +70,7 @@ export default function Home() {
             </Box>
           </HStack>
         </Flex>
+        </VStack>
       </Flex>
       <Footer />
     </Container>

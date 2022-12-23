@@ -1,9 +1,10 @@
-import { Box, Link, } from "@chakra-ui/react";
+import { Box, Link, Divider, } from "@chakra-ui/react";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <Box align="center" opacity={0.4} fontSize='sm'>
+      <Divider />
+      <Box align="center" paddingTop={3.5} opacity={0.4} fontSize='sm' h={8}>
         &copy; {year}
         {" "}<Link href="http://hwnamr.my.id">HWNAMR</Link>. All Rights Reserved.
       </Box>
