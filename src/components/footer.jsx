@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <Divider />
-      <Box align="center" paddingTop={3.5} opacity={0.4} fontSize='sm' h={8}>
+      <Box align="center" padding={3} opacity={0.4} fontSize='sm' h={12}>
         &copy; {year}
         {" "}<Link href="http://hwnamr.my.id">HWNAMR</Link>. All Rights Reserved.
       </Box>
