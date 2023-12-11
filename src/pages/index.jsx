@@ -43,7 +43,7 @@ export default function Home() {
           I&apos;m Muhammad Hawwin Amri
         </Heading>
         <Text align="center">
-          Researcher, CTF Player, Infosec Practioner, Perpetual Learner.
+            Software Engineer, Web Developer, CTF Player
         </Text>
         <Text>--- FOLLOW ME ---</Text>
         <Flex>
